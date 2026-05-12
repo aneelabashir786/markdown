@@ -10,7 +10,7 @@ import os
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Hugging Face model path
-MODEL_PATH = "aneelaBashir22f3414/document-to-markdown-generation"
+MODEL_PATH = "https://huggingface.co/aneelaBashir22f3414/document-to-markdown-generation/resolve/main/best_model.pth"
 
 @st.cache_resource
 def load_model():
